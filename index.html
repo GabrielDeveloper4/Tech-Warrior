@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechWarrior</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1><a href="index.html">TechWarrior</a></h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar productos...">
+        <button class="btn" id="search-button">Buscar</button>
+      </div>
+      <div class="menu">
+        <ul>
+          <li id="menu"><a href="#inicio">Inicio</a></li>
+          <li id="menu"><a href="#productos">Productos</a></li>
+          <li><a href="#" id="cart-link">Carrito</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="espacio" id="inicio"></div>
+    <div class="fondo">
+      <h2>Bienvenido a TechWarrior tu tienda de Hardware Gamer</h2>
+      <p>Encuentra los mejores productos para mejorar tu experiencia de juego</p>
+      <a href="#" class="btn">Explorar</a>
+    </div>
+  </header>
+  <main>
+    <section class="products" id="productos">
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="imgs/1.jpg" alt="Producto 1">
+            <h3>Pc Gamer gama media</h3>
+            <p>Precio: S/2.399.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/2.jpg" alt="Producto 2">
+            <h3>AMD Ryzen 5 3600</h3>
+            <p>Precio: S/549.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/3.jpg" alt="Producto 1">
+            <h3>Intel core i5 9400f </h3>
+            <p>Precio: S/699.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/4.jpg" alt="Producto 2">
+            <h3>GTX 1650</h3>
+            <p>Precio: S/399.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/5.jpg" alt="Producto 1">
+            <h3>ssd m.2 1tb </h3>
+            <p>Precio: S/100.00.</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/6.jpg" alt="Producto 2">
+            <h3>Gabinete gamer</h3>
+            <p>Precio: S/120.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/7.jpg" alt="Producto 1">
+            <h3>Fuente de poder 850w</h3>
+            <p>Precio: S/700.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/8.png" alt="Producto 2">
+            <h3>RAM 2x8gb CORSAIR</h3>
+            <p>Precio: S/149.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/9.jpg" alt="Producto 1">
+            <h3>B450M PRO4-F</h3>
+            <p>Precio: S/250.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/10.jpg" alt="Producto 2">
+            <h3>Placa de video RTX 4090</h3>
+            <p>Precio: S/849.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/11.jpg" alt="Producto 1">
+            <h3>Placa de video GTX1650S</h3>
+            <p>Precio: S/509.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+          <div class="product-item">
+            <img src="imgs/12.jpg" alt="Producto 2">
+            <h3>Placa De Video Gtx1060 phoenix</h3>
+            <p>Precio: S/649.99</p>
+            <button class="btn-add-to-cart">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <p>TechWarrior Tu Tienda de Hardware Gamer &copy; 2023</p>
+      <h5><a href="https://www.facebook.com/profile.php?id=100094325239243">Desarrollado por G.A.S.V</a></h5>
+    </div>
+  </footer>
+
+  <div class="overlay"></div>
+  <div class="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: S/0.00</p>
+    <button class="btn" id="clear-cart">Vaciar Carrito</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="deslizador.js"></script>
+</body>
+
+</html>
